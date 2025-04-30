@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1 class="title">Hello World</h1>
-        <div id="mainDiv">Hello Div</div>
-        <br />
-        <button onclick="buttonClicked()">Click me</button>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Website with Sidebar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="./images/bunny.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#" data-target="work">work</a>
+      <a href="#" data-target="about">about</a>
+      <a href="#" data-target="contact">contact</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="work" class="section work active">
+      <h2>Hi, I'm Cindy!</h2>
+      <p>I am a graphic designer and something else blah blah </p>
+      <div class="image-entry">
+        <div class="image-title">Project One</div>
+        <div class="image-link">
+          <a href="work1.html"><img src="https://via.placeholder.com/300x200?text=Work+1" alt="Work 1"></a>
+        </div>
+      </div>
+      <div class="image-entry">
+        <div class="image-title">Project Two</div>
+        <div class="image-link">
+          <a href="work2.html"><img src="https://via.placeholder.com/300x200?text=Work+2" alt="Work 2"></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="section about">
+      <h2>About Me</h2>
+      <p>
+        I'm a creative web developer with a passion for clean design and intuitive user experiences. With a background in design and years of coding practice, I specialize in building modern websites that balance function and aesthetics.
+      </p>
+    </div>
+
+    <div id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to get in touch for project collaborations or freelance opportunities.<br><br>
+        📧 Email: <a href="mailto:you@example.com">you@example.com</a><br>
+        📞 Phone: (123) 456-7890
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('.section');
+
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('data-target');
+
+        sections.forEach(section => {
+          section.classList.remove('active');
+        });
+
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          setTimeout(() => {
+            targetSection.classList.add('active');
+          }, 10);
+        }
+      });
+    });
+  </script>
+</body>
 </html>
