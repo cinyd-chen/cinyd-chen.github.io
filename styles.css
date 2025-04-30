@@ -1,27 +1,28 @@
 @font-face{
   font-family: 'quicksand-regular';
-  src: url(./fonts/quicksand-regular.otf);
+  src: url(./fonts/Quicksand-Regular.otf);
 }
 @font-face{
   font-family: 'quicksand-semibold';
-  src: url(./fonts/quicksand-semibold.otf);
+  src: url(./fonts/Quicksand-Semibold.otf);
 }
 @font-face{
   font-family: 'quicksand-bold';
-  src: url(./fonts/quicksand-bold.otf);
+  src: url(./fonts/Quicksand-Bold.otf);
 }
 @font-face{
   font-family: 'comico-regular';
-  src: url(./fonts/comico-regular.otf);
+  src: url(./fonts/Comico-Regular.otf);
 }
 @font-face{
   font-family: 'chillax-variable';
-  src: url(./fonts/chillax-variable.ttf);
+  src: url(./fonts/Chillax-Variable.ttf);
 }
 @font-face{
   font-family: 'chillax-medium';
-  src: url(./fonts/chillax-medium.otf);
+  src: url(./fonts/Chillax-Medium.otf);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -31,13 +32,12 @@
 html, body {
   display: block;
   font-family: Arial, sans-serif;
-  html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: rgba(231, 231, 231, 0.5);
 }
-}
+
 
 /* Sidebar */
 .sidebar {
