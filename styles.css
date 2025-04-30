@@ -8,15 +8,15 @@
 }
 @font-face{
   font-family: 'quicksand-bold';
-  src: url(./fonts/Quicksand-Bold.otf);
+  src: url(./fonts/Quicksand-Bold.woff2);
 }
 @font-face{
   font-family: 'comico-regular';
-  src: url(./fonts/Comico-Regular.otf);
+  src: url(./fonts/Comico-Regular.woff2);
 }
 @font-face{
-  font-family: 'chillax-variable';
-  src: url(./fonts/Chillax-Variable.ttf);
+  font-family: 'chillax-regular';
+  src: url(./fonts/Chillax-Regular.woff2);
 }
 @font-face{
   font-family: 'chillax-medium';
@@ -134,7 +134,7 @@ h2{
   margin-bottom: 3%;
 }
 p{
-  font-family:'chillax-variable';
+  font-family:'chillax-regular';
 }
 
 .section.about {
